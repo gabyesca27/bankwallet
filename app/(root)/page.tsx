@@ -5,9 +5,9 @@ import TotalBalanceBox from "../components/TotalBalanceBox";
 import RightSidebar from "../components/RightSidebar";
 
 const Home = () => {
-  const loggedIn = { firstName: "Gabi" };
-  const transactions = []; // o el objeto que necesites
-  const banks = [];        // o el objeto que necesites
+  const loggedIn = { firstName: "Gabi", lastName:"window", email:"g@gmail.com"};
+  const transactions = []; 
+  const banks = [];        
 
   return (
     <section className="home">
@@ -33,7 +33,7 @@ const Home = () => {
       <RightSidebar 
         user={loggedIn}
         transactions={transactions}
-        banks={banks}
+        banks={[{}, {}]}
       />
     </section> 
   );
